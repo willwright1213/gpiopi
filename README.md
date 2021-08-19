@@ -9,7 +9,7 @@ This repository is basically my play ground for building stuff that makes use of
 
 This script makes use of 3 potentiometer to control the current flow (modulation) of an RGB light. In other words, the color can change. Here is a video to show how it works:
 
-![alt text](https://streamable.com/kvzzin)
+https://streamable.com/kvzzin
 
 ## LCD Display
 
