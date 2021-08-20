@@ -6,7 +6,6 @@
 #include <fcntl.h>
 #include <sys/ioctl.h>
 #include <unistd.h>
-#include <wiringPi.h>
 #include <pthread.h>
 #include <time.h>
 #include <errno.h>
