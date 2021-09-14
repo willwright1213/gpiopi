@@ -7,7 +7,9 @@ This repository is basically my play ground for building stuff that makes use of
 
 ## RGBLight test
 
-This script makes use of 3 potentiometer to control the current flow (modulation) of an RGB light. In other words, the color can change. Here is a video to show how it works:
+This script makes use of 3 potentiometer to control the current flow (modulation) of an RGB light. In other words, the color can change. Here is a a schematic provided by https://freenove.com in their tutorial book on how to use the raspberry pi:
+
+[schematc](https://github.com/willwright1213/gpiopi/blob/main/schema.png)
 
 https://streamable.com/kvzzin
 
