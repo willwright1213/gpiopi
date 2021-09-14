@@ -22,7 +22,7 @@ g++ main.c lcd.c bsc.c -o test
 ```
 This assume that the address for the lcd screen is 0x27. (you can change it in the main.c source file). Once running you will be able to type a word and it will print on the lcd screen.
 
-The LCD screen is my current work in progress. Most of the work so far has been reading relevant documentation to learn how the BSC works and how the LCD screen work.
+The LCD screen is my current work in progress. Most of the work so far has been reading relevant documentation to learn how the BSC works and how the LCD screen work. My current project is to make it more useful (i.e: printing sentence rather than just words and allow messages to scroll).
 
 For BCM2711 datasheet:
 
