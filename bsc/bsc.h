@@ -1,5 +1,10 @@
 #include <cstdint>
 
+//default peripheral addresses
+
+constexpr int8_t DEF1 = 0x27;
+constexpr int8_t DEF2 = 0x3F;
+
 constexpr std::uint32_t BSC0_ADDR = 0x0fe205000;
 constexpr std::uint32_t BSC1_ADDR = 0x0fe804000;
 constexpr std::uint32_t BSC3_ADDR = 0x0fe205600;
