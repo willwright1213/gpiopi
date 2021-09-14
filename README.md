@@ -18,11 +18,19 @@ In the BSC folder there is code that handles the Broadcom Serial Controller in t
 ```
 cd bsc
 g++ main.c lcd.c bsc.c -o test
-./test
+sudo ./test
 ```
-This assume that the address for the lcd screen is 0x27. (you can change it in the main.c source file). Once running you will be able to type a word and it will print on the lcd screen.
+This assumes the following:
+
+1. you connected the LCD screen to SDA1/SCL1 (this can be changed in bsc.c)
+2. the address to the peripheral is 0x27 (this can be changed in main.c)
+
+When you execute test you can input non-spaced words, and it will output to the lcd screen. Typing another word will clear what's on the screen before sending the commands.
 
 The LCD screen is my current work in progress. Most of the work so far has been reading relevant documentation to learn how the BSC works and how the LCD screen work. My current project is to make it more useful (i.e: printing sentence rather than just words and allow messages to scroll).
+
+
+=== Source ===
 
 For BCM2711 datasheet:
 
