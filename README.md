@@ -29,6 +29,7 @@ When you execute test you can input non-spaced words, and it will output to the 
 
 The LCD screen is my current work in progress. Most of the work so far has been reading relevant documentation to learn how the BSC works and how the LCD screen work. My current project is to make it more useful (i.e: printing sentence rather than just words and allow messages to scroll).
 
+![lcd](https://github.com/willwright1213/gpiopi/blob/main/20210913_201756.jpg)
 
 === Source ===
 
