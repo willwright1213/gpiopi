@@ -1,9 +1,6 @@
 #include "bsc.h"
 #include <string>
 
-constexpr int8_t DEF1 = 0x27;
-constexpr int8_t DEF2 = 0x3F;
-
 class LCD 
 {
 private:
