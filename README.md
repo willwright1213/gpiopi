@@ -13,6 +13,24 @@ https://streamable.com/kvzzin
 
 ## LCD Display
 
-This is my current work in progress. The LCD display I'm using is soldered with an I2C interface which means it only needs 4 connections rather than 16. To make use of i2c with
-Pi we need to use the Broadcom Serial Control which is specified in the Datasheet(https://datasheets.raspberrypi.org/bcm2711/bcm2711-peripherals.pdf). I am currently figuring out how to send commands properly to the BSC so that the LCD receives the proper instructions. The model of the LCD is LCD1602b and uses 4-bit operations.
+In the BSC folder there is code that handles the Broadcom Serial Controller in the BCM2711. The controller does support 10-bits slave address, however only the 7-bits is supported for now. To test its functionality I made a code to operate an LCD screen. you can compile the code as such:
+
+```
+cd bsc
+g++ main.c lcd.c bsc.c -o test
+./test
+```
+This assume that the address for the lcd screen is 0x27. (you can change it in the main.c source file). Once running you will be able to type a word and it will print on the lcd screen.
+
+The LCD screen is my current work in progress. Most of the work so far has been reading relevant documentation to learn how the BSC works and how the LCD screen work.
+
+For BCM2711 datasheet:
+
+https://datasheets.raspberrypi.org/bcm2711/bcm2711-peripherals.pdf
+
+For the LCD datasheet:
+
+https://www.sparkfun.com/datasheets/LCD/HD44780.pdf
+
+
 
