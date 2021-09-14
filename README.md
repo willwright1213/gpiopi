@@ -17,7 +17,7 @@ In the BSC folder there is code that handles the Broadcom Serial Controller in t
 
 ```
 cd bsc
-g++ main.c lcd.c bsc.c -o test
+g++ main.cpp lcd.cpp bsc.cpp -o test
 sudo ./test
 ```
 This assumes the following:
