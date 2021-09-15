@@ -46,7 +46,7 @@ std::int8_t LCD::poll_busy()
 LCD::LCD(BSC *d)
 {
     device = d;
-    //device->enable_i2c();
+    device->enable_i2c();
     usleep(60000);
     send_byte(0b00101100);
     while(poll_busy() == 1);
