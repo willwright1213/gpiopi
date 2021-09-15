@@ -13,7 +13,6 @@ void LCD::send_byte(std::int32_t data)
     device->write_fifo(0b00001000);
     while(device->trans_status() == 1); 
     while(device->done_status() == 0);
-    usleep(1500);
 }
 
 
@@ -24,7 +23,6 @@ void LCD::send_command(std::int8_t d1, std::int8_t d2)
     send_byte(d1);
     send_byte(d2);
     while(poll_busy() == 1);
-    usleep(1500);
 }
 
 std::int32_t LCD::read_addr_counter()
@@ -41,7 +39,7 @@ std::int32_t LCD::read_addr_counter()
 }
 std::int8_t LCD::poll_busy()
 {
-    usleep(1000);
+    usleep(500);
     return (read_addr_counter() >> 7)&1;
 }
 
