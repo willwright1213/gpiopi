@@ -14,7 +14,7 @@ BSC::BSC(std::uint8_t sa)
     addr[S] |= (1 << 8); //clear ACK Err
     addr[A] = sa;
     addr[C] |= (1 << 15); //enable BSC
-    addr[DIV] = 556;
+    addr[DIV] = 556; //clock specification for lcd, will be moved to its own function
     addr[DEL] = (10 << 16);
     close(fd);
 }
