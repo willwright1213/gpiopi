@@ -13,6 +13,7 @@ void LCD::send_byte(std::int32_t data)
     device->write_fifo(0b00001000);
     while(device->trans_status() == 1); 
     while(device->done_status() == 0);
+    usleep(1500);
 }
 
 
